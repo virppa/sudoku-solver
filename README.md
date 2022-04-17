@@ -1,4 +1,5 @@
 # sudoku-solver
+An exercise for implementing a backtracking recursive algorithm.
 
 ## To run:
 - use main(); on browser console to solve the sudoku seed that is at the moment hardcoded to main.js
