@@ -26,10 +26,10 @@ function isColumnValid(board, column, numberInput) {
 }
 
 function isBoxValid(board, row, column, numberInput) {
-  rowStartPoint = row - (row % 3);
-  columnStartPoint = column - (column % 3);
-  for (i = rowStartPoint; i < rowStartPoint + 3; i++) {
-    for (j = columnStartPoint; j < columnStartPoint + 3; j++) {
+  const rowStartPoint = row - (row % 3);
+  const columnStartPoint = column - (column % 3);
+  for (let i = rowStartPoint; i < rowStartPoint + 3; i++) {
+    for (let j = columnStartPoint; j < columnStartPoint + 3; j++) {
       if (board[i][j] == numberInput) return false;
     }
   }
