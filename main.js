@@ -43,7 +43,7 @@ function isPlacementValid(board, row, column, numberInput) {
     isRowValid(board, row, numberInput)
   )
     return true;
-  else return false;
+  return false;
 }
 
 function solve(board, row, column) {
