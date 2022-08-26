@@ -37,14 +37,11 @@ function isBoxValid(board, row, column, numberInput) {
 }
 
 function isPlacementValid(board, row, column, numberInput) {
-  if (
+  return (
     isBoxValid(board, row, column, numberInput) &&
     isColumnValid(board, column, numberInput) &&
     isRowValid(board, row, numberInput)
   )
-    return true;
-  return false;
-}
 
 function solve(board, row, column) {
   if (row == GRIDSIZE - 1 && column == GRIDSIZE) {
